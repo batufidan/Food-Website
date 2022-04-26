@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import ScrollToTop from "./components/ScrollToTop"
+import Navbar from "./components/ScrollToTop"
+import Hero from "./components/ScrollToTop"
+import Services from "./components/ScrollToTop"
+import Portfolio from "./components/ScrollToTop"
+import Testimonials from "./components/ScrollToTop"
+import Products from "./components/ScrollToTop"
+import Newsletter from "./components/ScrollToTop"
+import Footer from "./components/ScrollToTop"
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+     <ScrollToTop /> 
+     <Navbar />
+     <Hero />
+     <Services />
+     <Portfolio />
+     <Testimonials />
+     <Products />
+     <Newsletter />
+     <Footer />
+    </>
+  )
 }
 
-export default App;
+export default App
